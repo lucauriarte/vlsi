@@ -1,0 +1,44 @@
+# Quartus II generated files - do not commit
+
+# Compilation databases
+db/
+incremental_db/
+
+# Output files (programming files, reports, etc.)
+output_files/
+
+# Simulation output
+simulation/
+
+# Greybox primitives
+greybox_tmp/
+
+# Temporary and workspace files
+*.qws
+*.done
+*.rpt
+*.summary
+*.smsg
+*.esf
+*.jdi
+*.pin
+*.sof
+*.pof
+*.rbf
+*.ekp
+*.jic
+*.jam
+*.jbc
+*.cdf
+
+# Mentor simulation files
+*.wlf
+*.vstf
+
+# Questa / ModelSim
+transcript
+vsim.wlf
+
+# Windows
+Thumbs.db
+Desktop.ini
