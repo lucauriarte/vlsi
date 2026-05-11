@@ -26,23 +26,17 @@ En una versión Moore, la salida sólo dependería del estado y existiría una e
 
 Notación de las aristas: `updown / lsb msb`.
 
-```
-                       0/00
-            ┌──────────────────────────┐
-            │                          ▼
-       ┌────────┐                  ┌────────┐
-       │  zero  │ ◄─────1/00─────  │  one   │
-       └────────┘                  └────────┘
-         ▲   │                       ▲   │
-         │   │                       │   │
-       0/11  1/11                  1/10  0/10
-         │   │                       │   │
-         │   ▼                       │   ▼
-       ┌────────┐                  ┌────────┐
-       │ three  │ ◄─────1/01─────  │  two   │
-       └────────┘                  └────────┘
-            │                          ▲
-            └──────────0/01────────────┘
+```mermaid
+stateDiagram-v2
+    direction LR
+    zero --> one   : 0 / 00
+    one  --> zero  : 1 / 00
+    zero --> three : 1 / 11
+    three --> zero : 0 / 11
+    one  --> two   : 0 / 10
+    two  --> one   : 1 / 10
+    two  --> three : 0 / 01
+    three --> two  : 1 / 01
 ```
 
 ## Tabla de transiciones y salidas
