@@ -96,11 +96,11 @@ architecture arq_withselect of ejercicio1 is
 begin
 	 with std_logic_vector'(a,b,cin) select
 	 (cout,s) <= std_logic_vector'("00") when "000",
-					 std_logic_vector'("01") when "001",
-					 std_logic_vector'("01") when "010",
-					 std_logic_vector'("10") when "011",
-					 std_logic_vector'("01") when "100",
-					 std_logic_vector'("10") when "101",
-					 std_logic_vector'("10") when "110",
-					 std_logic_vector'("11") when others;
+				 std_logic_vector'("01") when "001",
+				 std_logic_vector'("01") when "010",
+				 std_logic_vector'("10") when "011",
+				 std_logic_vector'("01") when "100",
+				 std_logic_vector'("10") when "101",
+				 std_logic_vector'("10") when "110",
+				 std_logic_vector'("11") when others;
 end arq_withselect;
