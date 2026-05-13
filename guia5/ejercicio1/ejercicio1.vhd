@@ -92,7 +92,7 @@ begin
 	std_logic_vector'("11");
 end arq_whenelse;
 
-architecture arq_whenelse of ejercicio1 is
+architecture arq_withselect of ejercicio1 is
 begin
 	 with std_logic_vector'(a,b,cin) select
 	 (cout,s) <= std_logic_vector'("00") when "000",
@@ -103,4 +103,4 @@ begin
 					 std_logic_vector'("10") when "101",
 					 std_logic_vector'("10") when "110",
 					 std_logic_vector'("11") when others;
-end arq_whenelse;
+end arq_withselect;
